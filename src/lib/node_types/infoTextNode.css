@@ -1,0 +1,19 @@
+.info-text-node{
+    height: 50px;
+    border: 1px solid rgb(10, 10, 10);
+    padding: 5px;
+    display:flex;
+    border-radius: 5px;
+    background: white;
+}
+.info-text-node-label{
+    margin:  auto;
+}
+.info-text-node-pct{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -2.5rem;
+}

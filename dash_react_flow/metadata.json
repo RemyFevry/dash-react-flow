@@ -1,0 +1,142 @@
+{
+  "src/lib/components/DashReactFlow.react.js": {
+    "description": "",
+    "displayName": "DashReactFlow",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "nodes": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "array of nodes (for an controlled flow)"
+      },
+      "edges": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "array of edges (for an controlled flow)"
+      },
+      "NodeClicked": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "called when user clicks a node"
+      },
+      "draggable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "are the node and its edges draggable",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "style",
+        "defaultValue": {
+          "value": "{height:500,width:500}",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/DashReactFlowDagre.react.js": {
+    "description": "",
+    "displayName": "DashReactFlowDagre",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "nodes": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "array of nodes (for an controlled flow)"
+      },
+      "edges": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "array of edges (for an controlled flow)"
+      },
+      "NodeClicked": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "called when user clicks a node"
+      },
+      "draggable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "are the node and its edges draggable",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "style",
+        "defaultValue": {
+          "value": "{height:500,width:500}",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}

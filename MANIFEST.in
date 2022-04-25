@@ -1,0 +1,11 @@
+include dash_react_flow/dash_react_flow.min.js
+include dash_react_flow/dash_react_flow.min.js.map
+include dash_react_flow/async-*.js
+include dash_react_flow/async-*.js.map
+include dash_react_flow/*-shared.js
+include dash_react_flow/*-shared.js.map
+include dash_react_flow/metadata.json
+include dash_react_flow/package-info.json
+include README.md
+include LICENSE
+include package.json
