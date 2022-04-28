@@ -1,6 +1,6 @@
 {
   "name": "dash_react_flow",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Project Description",
   "main": "build/index.js",
   "scripts": {

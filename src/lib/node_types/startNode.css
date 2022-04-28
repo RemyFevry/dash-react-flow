@@ -1,0 +1,11 @@
+.start-node{
+    height: 50px;
+    border: 1px solid rgb(10, 10, 10);
+    padding: 5px;
+    display:flex;
+    border-radius: 5px;
+    background: white;
+}
+.start-node-label{
+    margin:  auto;
+}

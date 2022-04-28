@@ -10,8 +10,12 @@
 }
 
 \usage{
-''DashReactFlow(id=NULL, NodeClicked=NULL, draggable=NULL, edges=NULL,
-nodes=NULL, style=NULL)
+''DashReactFlow(id=NULL, NodeClicked=NULL, attributionPosition=NULL,
+className=NULL, defaultPosition=NULL, defaultZoom=NULL,
+edges=NULL, fitView=NULL, maxZoom=NULL, minZoom=NULL,
+nodes=NULL, nodesDraggable=NULL,
+onlyRenderVisibleElements=NULL, preventScrolling=NULL,
+snapGrid=NULL, snapToGrid=NULL, style=NULL)
 }
 
 \arguments{
@@ -19,11 +23,33 @@ nodes=NULL, style=NULL)
 
 \item{NodeClicked}{Named list. called when user clicks a node}
 
-\item{draggable}{Logical. are the node and its edges draggable}
+\item{attributionPosition}{Character. }
+
+\item{className}{Character. }
+
+\item{defaultPosition}{List of numerics. }
+
+\item{defaultZoom}{Numeric. }
 
 \item{edges}{List of named lists. array of edges (for an controlled flow)}
 
+\item{fitView}{Logical. }
+
+\item{maxZoom}{Numeric. }
+
+\item{minZoom}{Numeric. }
+
 \item{nodes}{List of named lists. array of nodes (for an controlled flow)}
+
+\item{nodesDraggable}{Logical. }
+
+\item{onlyRenderVisibleElements}{Logical. }
+
+\item{preventScrolling}{Logical. }
+
+\item{snapGrid}{List of numerics. }
+
+\item{snapToGrid}{Logical. }
 
 \item{style}{Named list. style}
 }

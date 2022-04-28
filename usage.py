@@ -11,7 +11,14 @@ initialNodes = [
     {
       "id": '1',
       "type": 'infoText',
-      "data": { "label": 'Input Node' ,"pct":"33%","color":"green"},
+      "data": { "label": 'Input Node' ,
+      "pct":"33%",
+      "color":"green",
+      # "isStart": True,
+      # "isTop":True
+      "handle":["Right"]
+      
+      },
       "position": { "x": 250, "y": 25 },
     },
   
@@ -23,7 +30,7 @@ initialNodes = [
     },
     {
       "id": '3',
-      "type": 'output',
+      "type": 'infoText',
       "data": { "label": 'Output Node' },
       "position": { "x": 250, "y": 250 },
     },
@@ -38,11 +45,12 @@ app.layout = html.Div([
     
 
 
-    DashReactFlowDagre(
+    DashReactFlow(
         id='input',
         nodes=initialNodes,
         edges=initialEdges,
-        draggable=True,
+        nodesDraggable=False,
+       
     ),
     html.Pre(id='output')
 ])
@@ -60,7 +68,7 @@ State("input","nodes")
 )
 def on_node(node_data,nodes):
     if node_data:
-      return json.dumps(node_data),nodes
+      return json.dumps(node_data),nodes[0:-1]
     else :
       return {},nodes
     
